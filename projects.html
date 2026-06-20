@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Ace</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrap">
+  <nav>
+    <a href="index.html" class="logo"><span class="dot"></span>ace<span style="color:var(--muted)">.dev</span></a>
+    <div class="navlinks">
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#why">Why Me</a>
+    </div>
+    <a href="index.html#contact" class="nav-cta">Get a quote</a>
+  </nav>
+
+  <div class="page-header">
+    <a href="index.html" class="back-link">← Back to home</a>
+    <div class="eyebrow">All Projects</div>
+    <h1>Things I've built so far.</h1>
+    <p>A running record of client work and practice builds — business sites, portfolios, and online stores. New ones get added as I finish them.</p>
+  </div>
+
+  <div class="filter-row" id="filterRow">
+    <button class="filter-chip active" data-filter="all">All</button>
+    <button class="filter-chip" data-filter="Business Website">Business</button>
+    <button class="filter-chip" data-filter="Portfolio Site">Portfolio</button>
+    <button class="filter-chip" data-filter="Online Store">Online Store</button>
+    <button class="filter-chip" data-filter="College Project">College Project</button>
+  </div>
+
+  <section style="border-bottom:none; padding-top:0;">
+    <div class="projects-grid" id="projectsGrid">
+
+      <div class="project-card" data-tag="Business Website" onclick="openLightbox(0)">
+        <div class="project-thumb">
+          <svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="240" fill="#10161D"/>
+            <rect width="400" height="26" fill="#141C24"/>
+            <circle cx="16" cy="13" r="4" fill="#5EEAD4"/>
+            <rect x="30" y="9" width="40" height="8" rx="2" fill="#3A4654"/>
+            <rect x="280" y="9" width="22" height="8" rx="2" fill="#3A4654"/>
+            <rect x="310" y="9" width="22" height="8" rx="2" fill="#3A4654"/>
+            <rect x="340" y="7" width="44" height="12" rx="3" fill="#5EEAD4"/>
+            <rect x="40" y="55" width="220" height="14" rx="2" fill="#E8EAED"/>
+            <rect x="40" y="78" width="160" height="8" rx="2" fill="#5C6B7A"/>
+            <rect x="40" y="92" width="130" height="8" rx="2" fill="#5C6B7A"/>
+            <rect x="40" y="116" width="90" height="22" rx="4" fill="#5EEAD4"/>
+            <rect x="250" y="48" width="110" height="90" rx="6" fill="#1B242C" stroke="#243038"/>
+            <rect x="40" y="170" width="100" height="50" rx="5" fill="#141C24"/>
+            <rect x="150" y="170" width="100" height="50" rx="5" fill="#141C24"/>
+            <rect x="260" y="170" width="100" height="50" rx="5" fill="#141C24"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <span class="confidential-badge"><span class="lock">●</span> Confidential client</span>
+          <span class="ptag">Business Website</span>
+          <h3>Client Project — Local Services</h3>
+          <p>A booking-focused landing page built for a local service business. Client name withheld for privacy.</p>
+          <div class="project-links">
+            <a href="javascript:void(0)" onclick="event.stopPropagation(); openLightbox(0)">View screenshot →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-tag="Portfolio Site" onclick="openLightbox(1)">
+        <div class="project-thumb">
+          <svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="240" fill="#10161D"/>
+            <rect width="400" height="26" fill="#141C24"/>
+            <circle cx="16" cy="13" r="4" fill="#F5A623"/>
+            <rect x="320" y="9" width="60" height="8" rx="2" fill="#3A4654"/>
+            <circle cx="200" cy="80" r="28" fill="#1B242C" stroke="#5EEAD4" stroke-width="2"/>
+            <rect x="150" y="124" width="100" height="12" rx="2" fill="#E8EAED"/>
+            <rect x="165" y="142" width="70" height="7" rx="2" fill="#5C6B7A"/>
+            <rect x="60" y="175" width="80" height="50" rx="5" fill="#141C24"/>
+            <rect x="160" y="175" width="80" height="50" rx="5" fill="#141C24"/>
+            <rect x="260" y="175" width="80" height="50" rx="5" fill="#141C24"/>
+            <rect x="75" y="190" width="50" height="6" rx="1" fill="#5EEAD4"/>
+            <rect x="175" y="190" width="50" height="6" rx="1" fill="#5EEAD4"/>
+            <rect x="275" y="190" width="50" height="6" rx="1" fill="#5EEAD4"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <span class="confidential-badge"><span class="lock">●</span> Confidential client</span>
+          <span class="ptag">Portfolio Site</span>
+          <h3>Client Project — Creative Portfolio</h3>
+          <p>A personal portfolio site for a freelance creative, built to showcase their work cleanly. Client name withheld for privacy.</p>
+          <div class="project-links">
+            <a href="javascript:void(0)" onclick="event.stopPropagation(); openLightbox(1)">View screenshot →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-tag="Online Store" onclick="openLightbox(2)">
+        <div class="project-thumb">
+          <svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="240" fill="#10161D"/>
+            <rect width="400" height="26" fill="#141C24"/>
+            <circle cx="16" cy="13" r="4" fill="#5EEAD4"/>
+            <rect x="30" y="9" width="40" height="8" rx="2" fill="#3A4654"/>
+            <rect x="350" y="8" width="16" height="10" rx="2" fill="#5EEAD4"/>
+            <rect x="40" y="45" width="78" height="78" rx="5" fill="#1B242C"/>
+            <rect x="128" y="45" width="78" height="78" rx="5" fill="#1B242C"/>
+            <rect x="216" y="45" width="78" height="78" rx="5" fill="#1B242C"/>
+            <rect x="304" y="45" width="56" height="78" rx="5" fill="#1B242C"/>
+            <rect x="48" y="130" width="50" height="7" rx="2" fill="#E8EAED"/>
+            <rect x="48" y="142" width="30" height="7" rx="2" fill="#5EEAD4"/>
+            <rect x="136" y="130" width="50" height="7" rx="2" fill="#E8EAED"/>
+            <rect x="136" y="142" width="30" height="7" rx="2" fill="#5EEAD4"/>
+            <rect x="224" y="130" width="50" height="7" rx="2" fill="#E8EAED"/>
+            <rect x="224" y="142" width="30" height="7" rx="2" fill="#5EEAD4"/>
+            <rect x="40" y="175" width="320" height="36" rx="5" fill="#141C24"/>
+            <rect x="56" y="188" width="120" height="10" rx="2" fill="#5C6B7A"/>
+            <rect x="300" y="186" width="44" height="14" rx="3" fill="#5EEAD4"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <span class="confidential-badge"><span class="lock">●</span> Confidential client</span>
+          <span class="ptag">Online Store</span>
+          <h3>Client Project — Online Store</h3>
+          <p>A small online store with product listings and checkout flow. Client name withheld for privacy.</p>
+          <div class="project-links">
+            <a href="javascript:void(0)" onclick="event.stopPropagation(); openLightbox(2)">View screenshot →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-tag="College Project" onclick="openLightbox(3)">
+        <div class="project-thumb">
+          <svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="240" fill="#10161D"/>
+            <rect width="70" height="240" fill="#141C24"/>
+            <rect x="16" y="20" width="38" height="8" rx="2" fill="#5EEAD4"/>
+            <rect x="16" y="50" width="38" height="6" rx="2" fill="#3A4654"/>
+            <rect x="16" y="66" width="38" height="6" rx="2" fill="#3A4654"/>
+            <rect x="16" y="82" width="38" height="6" rx="2" fill="#3A4654"/>
+            <rect x="90" y="24" width="180" height="12" rx="2" fill="#E8EAED"/>
+            <rect x="90" y="50" width="120" height="60" rx="5" fill="#1B242C"/>
+            <polyline points="98,100 120,70 140,85 160,60 180,75 200,55" fill="none" stroke="#5EEAD4" stroke-width="2.5"/>
+            <rect x="222" y="50" width="138" height="60" rx="5" fill="#1B242C"/>
+            <circle cx="291" cy="80" r="22" fill="none" stroke="#5EEAD4" stroke-width="6" stroke-dasharray="80 60"/>
+            <rect x="90" y="130" width="270" height="14" rx="3" fill="#141C24"/>
+            <rect x="90" y="150" width="270" height="14" rx="3" fill="#141C24"/>
+            <rect x="90" y="170" width="270" height="14" rx="3" fill="#141C24"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <span class="confidential-badge"><span class="lock">●</span> Practice build</span>
+          <span class="ptag">College Project</span>
+          <h3>Practice Build — Admin Dashboard</h3>
+          <p>A dashboard layout built during college to practice fullstack data handling and UI structure.</p>
+          <div class="project-links">
+            <a href="javascript:void(0)" onclick="event.stopPropagation(); openLightbox(3)">View screenshot →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="add-project-note">+ More projects coming soon — this page grows with every client I work with.</div>
+  </section>
+</div>
+
+<div class="lightbox-overlay" id="lightboxOverlay" onclick="closeLightbox(event)">
+  <div class="lightbox-box lightbox-wrap" onclick="event.stopPropagation()">
+    <div class="lightbox-close" onclick="closeLightbox(event)">✕</div>
+    <div class="lightbox-img" id="lightboxImg"></div>
+    <div class="lightbox-info">
+      <span class="confidential-badge"><span class="lock">●</span> Client name withheld for privacy</span>
+      <h3 id="lightboxTitle">Client Project</h3>
+      <p id="lightboxDesc">Description here.</p>
+    </div>
+  </div>
+</div>
+
+<footer>ace.dev — built right, start to finish.</footer>
+
+<script>
+  const chips = document.querySelectorAll('.filter-chip');
+  const cards = document.querySelectorAll('.project-card');
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      chips.forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      const filter = chip.dataset.filter;
+      cards.forEach(card => {
+        card.style.display = (filter === 'all' || card.dataset.tag === filter) ? '' : 'none';
+      });
+    });
+  });
+
+  const projectData = [
+    {
+      title: "Client Project — Local Services",
+      desc: "A booking-focused landing page built for a local service business. Client name withheld for privacy.",
+      svg: 0
+    },
+    {
+      title: "Client Project — Creative Portfolio",
+      desc: "A personal portfolio site for a freelance creative, built to showcase their work cleanly. Client name withheld for privacy.",
+      svg: 1
+    },
+    {
+      title: "Client Project — Online Store",
+      desc: "A small online store with product listings and checkout flow. Client name withheld for privacy.",
+      svg: 2
+    },
+    {
+      title: "Practice Build — Admin Dashboard",
+      desc: "A dashboard layout built during college to practice fullstack data handling and UI structure.",
+      svg: 3
+    }
+  ];
+
+  function openLightbox(index){
+    const data = projectData[index];
+    const sourceSvg = document.querySelectorAll('.project-thumb svg')[index];
+    document.getElementById('lightboxImg').innerHTML = sourceSvg.outerHTML;
+    document.getElementById('lightboxTitle').textContent = data.title;
+    document.getElementById('lightboxDesc').textContent = data.desc;
+    document.getElementById('lightboxOverlay').classList.add('open');
+  }
+
+  function closeLightbox(e){
+    document.getElementById('lightboxOverlay').classList.remove('open');
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape') closeLightbox();
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Ace</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrap">
+  <nav>
+    <a href="index.html" class="logo"><span class="dot"></span>ace<span style="color:var(--muted)">.dev</span></a>
+    <div class="navlinks">
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#why">Why Me</a>
+    </div>
+    <a href="index.html#contact" class="nav-cta">Get a quote</a>
+  </nav>
+
+  <div class="page-header">
+    <a href="index.html" class="back-link">← Back to home</a>
+    <div class="eyebrow">About Ace</div>
+    <h1>Built in code, sharpened on the front line.</h1>
+    <p>No agency, no middleman — just someone who studied fullstack development in college and now spends his working hours protecting hundreds of production sites.</p>
+  </div>
+
+  <section style="border-bottom:none;">
+    <div class="about-grid" style="grid-template-columns:1fr; max-width:680px;">
+      <div class="about-text">
+        <p>I studied <strong>fullstack web development</strong> through college, where I learned to build front to back — interfaces, logic, and the databases underneath. That's the foundation everything I build for clients stands on.</p>
+        <p>Alongside freelancing, I work as a <strong>Project Control Services Associate</strong>, where attention to detail and following through on every task is part of the job. I bring that same discipline to every site I build — nothing ships until it's checked and working the way it should.</p>
+        <p>I'm early in my freelance journey, which is exactly why I price fairly and pay close attention to every project — your site isn't just a job, it's part of the portfolio I'm building too.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" style="border-bottom:none;">
+    <div class="section-head">
+      <div class="eyebrow">Why work with me</div>
+      <h2>What you get that most beginner freelancers can't offer.</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="mark">→</div>
+        <div><h4>Reliability you can count on</h4><p>I treat every project with the same discipline I bring to my day job — clear communication, careful checking, and nothing shipped half-done.</p></div>
+      </div>
+      <div class="why-item">
+        <div class="mark">→</div>
+        <div><h4>Real fullstack foundation</h4><p>I'm trained front to back, so your site isn't a template with a new logo — it's built and wired together by someone who understands how it actually works.</p></div>
+      </div>
+      <div class="why-item">
+        <div class="mark">→</div>
+        <div><h4>Direct communication</h4><p>No account managers, no relay through three people. You talk to the person actually building your site.</p></div>
+      </div>
+      <div class="why-item">
+        <div class="mark">→</div>
+        <div><h4>Fair, flat pricing</h4><p>₱8,000 flat for any site type right now — no hidden add-ons, no guessing what it'll cost.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="border-bottom:none;">
+    <div class="contact-panel">
+      <div class="eyebrow" style="justify-content:center;">Get in touch</div>
+      <h2>Ready to build something?</h2>
+      <p>Send a quick email with what kind of site you need and I'll reply with next steps.</p>
+      <a class="email-box" id="emailBox" href="mailto:ace.webdev@example.com">ace.webdev@example.com</a>
+      <div class="copy-hint">Click to email · or tap to copy</div>
+    </div>
+  </section>
+</div>
+
+<footer>ace.dev — built right, start to finish.</footer>
+
+<script>
+  document.getElementById('emailBox').addEventListener('click', function(e){
+    navigator.clipboard && navigator.clipboard.writeText('ace.webdev@example.com');
+  });
+</script>
+
+</body>
+</html>
