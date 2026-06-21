@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Circuit — Tech Store</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:'Inter',sans-serif; background:#F5F6F8; color:#1A1D23;}
+  .nav{display:flex; justify-content:space-between; align-items:center; padding:20px 48px; background:#fff; border-bottom:1px solid #E4E6EA;}
+  .logo{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:20px;}
+  .search{flex:1; max-width:380px; margin:0 40px; background:#F0F1F4; border-radius:8px; padding:10px 16px; font-size:13px; color:#9098A6;}
+  .cart-icon{background:#1A1D23; color:#fff; padding:9px 18px; border-radius:8px; font-size:13px;}
+  .banner{background:linear-gradient(120deg,#1A1D23,#33394A); color:#fff; padding:14px; text-align:center; font-size:13px;}
+  .banner b{color:#5FA8FF;}
+  .hero{padding:50px 48px; text-align:center;}
+  .hero h1{font-family:'Space Grotesk',sans-serif; font-size:36px; margin-bottom:14px;}
+  .hero p{color:#6B7280; font-size:15px;}
+  .products{padding:10px 48px 70px; display:grid; grid-template-columns:repeat(4,1fr); gap:20px;}
+  .card{background:#fff; border:1px solid #E4E6EA; border-radius:14px; overflow:hidden; transition:box-shadow .2s;}
+  .card-img{height:140px;}
+  .card-body{padding:16px;}
+  .card-body h4{font-size:14px; margin-bottom:6px;}
+  .card-body .price{color:#1A1D23; font-weight:700; font-size:15px;}
+  .card-body .old-price{color:#9098A6; font-size:12px; text-decoration:line-through; margin-left:6px;}
+  .add-btn{width:100%; margin-top:10px; background:#5FA8FF; color:#fff; border:none; padding:9px; border-radius:8px; font-size:13px; font-weight:600;}
+  footer{text-align:center; padding:30px; color:#9098A6; font-size:13px; border-top:1px solid #E4E6EA; background:#fff;}
+</style>
+</head>
+<body>
+  <div class="nav">
+    <div class="logo">Circuit</div>
+    <div class="search">Search for laptops, audio, accessories...</div>
+    <div class="cart-icon">Cart · 0</div>
+  </div>
+  <div class="banner">Free shipping on orders over <b>$50</b> — ends Sunday</div>
+  <div class="hero">
+    <h1>Tech that keeps up with you.</h1>
+    <p>Laptops, audio, and accessories — tested, in stock, and shipped fast.</p>
+  </div>
+  <div class="products">
+    <div class="card"><div class="card-img" style="background:linear-gradient(135deg,#DCE3F0,#9AAFD4);"></div><div class="card-body"><h4>Wireless Headphones</h4><div><span class="price">$89</span><span class="old-price">$120</span></div><button class="add-btn">Add to cart</button></div></div>
+    <div class="card"><div class="card-img" style="background:linear-gradient(135deg,#E0E5EC,#A6AEBB);"></div><div class="card-body"><h4>Mechanical Keyboard</h4><div><span class="price">$64</span></div><button class="add-btn">Add to cart</button></div></div>
+    <div class="card"><div class="card-img" style="background:linear-gradient(135deg,#D8E0F2,#8FA3CC);"></div><div class="card-body"><h4>USB-C Hub, 7-in-1</h4><div><span class="price">$32</span></div><button class="add-btn">Add to cart</button></div></div>
+    <div class="card"><div class="card-img" style="background:linear-gradient(135deg,#E5E8ED,#B0B8C4);"></div><div class="card-body"><h4>Portable SSD 1TB</h4><div><span class="price">$95</span><span class="old-price">$110</span></div><button class="add-btn">Add to cart</button></div></div>
+  </div>
+  <footer>Circuit — demo e-commerce site built by Ace, for portfolio purposes.</footer>
+</body>
+</html>

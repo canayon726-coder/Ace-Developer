@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Norhaven — Home & Living</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:'Inter',sans-serif; background:#FAF8F4; color:#2B2723;}
+  .nav{display:flex; justify-content:space-between; align-items:center; padding:22px 48px; border-bottom:1px solid #E8E2D8;}
+  .logo{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:20px; letter-spacing:-0.3px;}
+  .nav-links{display:flex; gap:32px; font-size:14px; color:#6B6258;}
+  .cart-btn{background:#2B2723; color:#fff; padding:9px 18px; border-radius:20px; font-size:13px;}
+  .hero{display:grid; grid-template-columns:1fr 1fr; align-items:center; padding:60px 48px; gap:40px;}
+  .hero h1{font-family:'Space Grotesk',sans-serif; font-size:46px; line-height:1.15; margin-bottom:18px;}
+  .hero p{color:#6B6258; font-size:16px; max-width:380px; margin-bottom:28px;}
+  .hero-cta{display:inline-block; background:#C9A45C; color:#fff; padding:14px 28px; border-radius:24px; font-weight:600; font-size:14px;}
+  .hero-img{height:340px; border-radius:20px; background:linear-gradient(135deg,#D8C9A8,#A8916A);}
+  .products{padding:40px 48px 70px;}
+  .products h2{font-family:'Space Grotesk',sans-serif; font-size:26px; margin-bottom:28px;}
+  .grid{display:grid; grid-template-columns:repeat(4,1fr); gap:22px;}
+  .card{background:#fff; border-radius:14px; overflow:hidden; border:1px solid #E8E2D8;}
+  .card-img{height:150px;}
+  .card-body{padding:16px;}
+  .card-body h4{font-size:14px; margin-bottom:6px;}
+  .card-body .price{color:#C9A45C; font-weight:600; font-size:14px;}
+  footer{text-align:center; padding:30px; color:#9B9286; font-size:13px; border-top:1px solid #E8E2D8;}
+</style>
+</head>
+<body>
+  <div class="nav">
+    <div class="logo">Norhaven</div>
+    <div class="nav-links"><span>Shop</span><span>Collections</span><span>About</span></div>
+    <div class="cart-btn">Cart (0)</div>
+  </div>
+  <div class="hero">
+    <div>
+      <h1>Furniture that feels like home.</h1>
+      <p>Hand-picked home goods and furniture, made to last and built to feel warm in every room.</p>
+      <div class="hero-cta">Shop the collection</div>
+    </div>
+    <div class="hero-img"></div>
+  </div>
+  <div class="products">
+    <h2>Best sellers</h2>
+    <div class="grid">
+      <div class="card"><div class="card-img" style="background:linear-gradient(135deg,#E3D5BC,#B89F77);"></div><div class="card-body"><h4>Oak Lounge Chair</h4><div class="price">$249</div></div></div>
+      <div class="card"><div class="card-img" style="background:linear-gradient(135deg,#D6C4A1,#9C8560);"></div><div class="card-body"><h4>Linen Throw Pillow</h4><div class="price">$38</div></div></div>
+      <div class="card"><div class="card-img" style="background:linear-gradient(135deg,#CDB890,#8E764F);"></div><div class="card-body"><h4>Ceramic Vase Set</h4><div class="price">$64</div></div></div>
+      <div class="card"><div class="card-img" style="background:linear-gradient(135deg,#E0CFAE,#A4895F);"></div><div class="card-body"><h4>Walnut Side Table</h4><div class="price">$189</div></div></div>
+    </div>
+  </div>
+  <footer>Norhaven — demo store built by Ace, for portfolio purposes.</footer>
+</body>
+</html>
